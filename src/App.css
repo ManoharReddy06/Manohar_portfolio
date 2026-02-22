@@ -1,0 +1,38 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.containerDiv {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.arrow {
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 4rem;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgb(192, 191, 191);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.arrow>img {
+  width: 1rem;
+}
+@media(width < 991px) {
+  .arrow {
+    width: 4rem;
+    height: 4rem;
+    bottom: 2.5rem;
+    right: 2.5rem;
+  }
+}
